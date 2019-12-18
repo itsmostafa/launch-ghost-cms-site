@@ -16,7 +16,7 @@ Launch a Ghost CMS Website using Docker onto an Ubuntu server for production! In
 
 -   `docker-compose up -d`
 
-### Create your account
+### 4. Create your account
 
 -   Visit `https://yourdomain.com/ghost`
 -   Enter your email, full name, password, and blog title
