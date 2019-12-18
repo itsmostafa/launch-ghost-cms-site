@@ -25,7 +25,7 @@ services:
 
     nginx:
         build:
-            context: ./nginx
+            context: ./etc
             dockerfile: Dockerfile
         restart: always
         depends_on:
