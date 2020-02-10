@@ -3,8 +3,11 @@
 # install latest version of docker the lazy way
 curl -sSL https://get.docker.com | sh
 
+# install software properties common
+sudo apt install software-properties-common
+
 # add lets encrypt
-# sudo add-apt-repository ppa:certbot/certbot
+sudo add-apt-repository ppa:certbot/certbot
 
 # upgrade packages
 sudo apt update

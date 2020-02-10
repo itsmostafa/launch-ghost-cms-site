@@ -10,9 +10,6 @@ Launch a Ghost CMS Website using Docker onto an Ubuntu server for production! In
 
 ### 2. Install Certbot to request and download a free certificate from [Let's Encrypt](https://letsencrypt.org/)
 
--   `sudo apt install software-properties-common`
--   `sudo add-apt-repository ppa:certbot/certbot`
--   `sudo apt update`
 -   `sudo apt install certbot`
 -   `sudo certbot certonly --standalone -d yourdomain.com`
 
