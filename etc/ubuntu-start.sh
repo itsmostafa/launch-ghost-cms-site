@@ -25,6 +25,11 @@ sudo apt install docker-ce
 # install nginx
 sudo apt install nginx
 
+# install certbot
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get install python-certbot-nginx
+
 # remove the need for sudo
 sudo groupadd docker
 sudo gpasswd -a $USER docker
