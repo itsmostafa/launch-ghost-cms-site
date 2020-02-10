@@ -1,38 +1,19 @@
 version: "3"
 services:
     ghost:
-        image: ghost:latest
+        image: ghost:alpine
         restart: always
-        depends_on:
-            - db
+        ports:
+            - 8080:2368
         environment:
-            url: https://example.com
             database__client: mysql
             database__connection__host: db
             database__connection__user: root
-            database__connection__password: your_database_root_password
+            database__connection__password: changeme
             database__connection__database: ghost
-        volumes:
-            - /opt/ghost_content:/var/lib/ghost/content
 
     db:
-        image: mariadb:latest
+        image: mysql:5.7
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: your_database_root_password
-        volumes:
-            - /opt/ghost_mysql:/var/lib/mysql
-
-    nginx:
-        build:
-            context: ./etc
-            dockerfile: Dockerfile
-        restart: always
-        depends_on:
-            - ghost
-        ports:
-            - "80:80"
-            - "443:443"
-        volumes:
-            - /etc/letsencrypt/:/etc/letsencrypt/
-            - /usr/share/nginx/html:/usr/share/nginx/html
+            MYSQL_ROOT_PASSWORD: changeme
