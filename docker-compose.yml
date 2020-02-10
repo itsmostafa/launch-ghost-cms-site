@@ -16,7 +16,7 @@ services:
             - /opt/ghost_content:/var/lib/ghost/content
 
     db:
-        image: mysql:5.7
+        image: mariadb:latest
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: your_database_root_password
