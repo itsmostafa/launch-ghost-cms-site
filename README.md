@@ -4,6 +4,10 @@ Launch a Ghost CMS Website using Docker onto an Ubuntu server for production! In
 
 ### 1. Replace all _example.com_ instances with your domain
 
+### 2. Install Docker on your Ubuntu server
+
+-   `echo -e "yes\nyes\nyes" | ./ubuntu-start.sh`
+
 ### 2. Install Certbot to request and download a free certificate from [Let's Encrypt](https://letsencrypt.org/)
 
 -   `sudo apt install software-properties-common`
