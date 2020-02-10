@@ -21,3 +21,8 @@ up:
 # target: stop = stop ghost application
 stop:
 	docker-compose stop
+
+# target: update = update to latest version of ghost
+update:
+	sudo chmod +x ./etc/update.sh
+	./etc/update.sh

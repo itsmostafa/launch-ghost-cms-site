@@ -28,3 +28,8 @@ Launch a Ghost CMS Website using Docker onto an Ubuntu 18.04 server for producti
 
 -   Visit `https://example.com/ghost`
 -   Enter your email, full name, password, and blog title
+
+## To get Ghost updates:
+
+-   `make update`
+-   Note: to recieve recurring updates, you may want to add this command as a crontab task
