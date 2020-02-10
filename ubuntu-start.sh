@@ -22,6 +22,9 @@ sudo usermod -aG docker ubuntu
 sudo apt install docker-compose
 sudo apt install docker-ce
 
+# install nginx
+sudo apt install nginx
+
 # remove the need for sudo
 sudo groupadd docker
 sudo gpasswd -a $USER docker
@@ -31,3 +34,4 @@ sudo ufw enable
 sudo ufw allow 80
 sudo ufw allow 443
 sudo ufw allow 'OpenSSH'
+sudo ufw allow 'Nginx Full'
